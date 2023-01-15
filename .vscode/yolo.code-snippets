@@ -1,0 +1,24 @@
+// in file 'Code/User/snippets/javascript.json'
+{
+    "Line Console": {
+      "prefix": ["debug"],
+      "body": ["console.log('$TM_FILEPATH:$TM_LINE_NUMBER $CLIPBOARD')"],
+      "description": "Something amazing"
+    },
+    "Add @REFACTO":{
+        "prefix":["refacto", "@refacto"],
+        "body":["$BLOCK_COMMENT_START* \n\t@REFACTO ${0:Refacto things} \n$BLOCK_COMMENT_END"],
+        "description": "This adds a JSDOC @REFACTO indication"
+    },
+    "Add @TODO":{
+      "prefix":["todo", "@todo"],
+      "body":["$BLOCK_COMMENT_START* \n\t@TODO ${0:Do things} \n$BLOCK_COMMENT_END"],
+      "description": "This adds a JSDOC-like @TODO indication"
+    },
+    "Add @WIP":{
+      "prefix":["wip", "@wip"],
+      "body":["$BLOCK_COMMENT_START* \n\t@WIP ${0:Finish things} \n$BLOCK_COMMENT_END"],
+      "description": "This adds a JSDOC-like @WIP indication"
+    },
+  
+  }
